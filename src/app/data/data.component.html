@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <h1>Live News</h1>
+            <h1>US Public Data</h1>
 
             <table class="table table-striped">
                 <thead>
@@ -16,11 +16,12 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let i of publicData.data">
-                    <td></td>
+                    <td>{{i["ID Nation"]}}</td>
                     <td>{{i.Nation}}</td>
-                    <td></td>
+                    <td>{{i["ID Year"]}}</td>
                     <td>{{i.Year}}</td>
                     <td>{{i.Population}}</td>
+                    <td>{{i["Slug Nation"]}}</td>
                     <td></td>
                   </tr>
                 </tbody>
