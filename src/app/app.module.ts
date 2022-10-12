@@ -5,6 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DataComponent } from './data/data.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const link:Routes=[
+  {
+    path:"",component:DataComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -14,7 +22,8 @@ import { DataComponent } from './data/data.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(link)
   ],
   providers: [],
   bootstrap: [AppComponent]
